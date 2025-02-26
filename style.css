@@ -1,0 +1,295 @@
+:root {
+  --primaryColor: #00945f;
+  --secondaryColor: #ebf7f5;
+  --tertiaryColor: #888888;
+  --quaternaryColor: #759b24;
+  --quinaryColor: #e97300;
+  --verticalLineColor: #666666;
+  --colorWhite: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header section css */
+header .logo {
+  padding: 64px 34px 54px 34px;
+}
+
+/* Hero section css */
+main .hero__wrapper {
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero__wrapper img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Investment section css + Citizens section css */
+main .investment__wrapper,
+.citizens__wrapper,.citizensBank__wrapper,.citizensTestimonial__wrapper {
+  padding: 50px;
+}
+
+.investment__wrapper p:nth-child(1),
+.citizens__wrapper .citisend__txt {
+  text-align: center;
+  color: var(--primaryColor);
+  position: relative;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.investment__wrapper p:nth-child(2),
+.citizens__wrapper .row .col__left p:nth-child(2),
+.citizens__wrapper .row .col__right p:nth-child(2) {
+  color: var(--tertiaryColor);
+  font-size: 18px;
+  padding-top: 25px;
+  line-height: 35px;
+}
+
+
+.investment__wrapper p:nth-child(1)::after,
+.citizens__wrapper .citisend__txt::after {
+  content: " ";
+  position: absolute;
+  background: #00945f;
+  width: 80px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Career btn */
+.career__btn button {
+  border: none;
+  background: var(--quinaryColor);
+  padding: 10px 25px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  color: var(--colorWhite);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.career__btn button:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 4px #e9730085;
+}
+
+/* Citizens section css */
+.citizens__wrapper .row {
+  display: flex;
+  gap: 100px;
+  padding-top: 35px;
+  position: relative;
+  
+}
+.citizens__wrapper .row:nth-child(2){
+    padding-bottom: 100px;
+}
+.citizens__wrapper .row .col__left p:nth-child(1),
+.citizens__wrapper .row .col__right p:nth-child(1) {
+  text-align: justify;
+  font-size: 24px;
+  padding-bottom: 5px !important;
+  color: var(--primaryColor);
+}
+.citizens__wrapper .row .col__left p:nth-child(2),
+.citizens__wrapper .row .col__right p:nth-child(2) {
+  text-align: justify;
+  padding: 0 !important;
+}
+.citizens__wrapper .row .col__left {
+  width: 47%;
+}
+.citizens__wrapper .row .col__right {
+  width: 48%;
+}
+.citizens__wrapper .row::after {
+  position: absolute;
+  content: "";
+  background-color: var(--verticalLineColor);
+  height: 143px;
+  width: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.citizens__wrapper .row .col__left a{
+    text-decoration: none;
+    color: var(--quaternaryColor);
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+}
+
+.citizens__wrapper .row .col__left a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.citizens__wrapper .row .col__left a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 0.05em;
+    bottom: 0;
+    left: 0;
+    background: currentcolor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -ms-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+}
+
+.citizens__wrapper .row .col__left a span{
+    display: flex;
+}
+.citizens__wrapper .row .col__left a span img{
+    transform: rotate(271deg);
+    width: 20px;
+}
+
+/* Citizens bank and citizens one home loans section css */
+.citizensBank__wrapper .citizen__title{
+    font-size: 24px;
+    padding: 14px;
+    background: var(--primaryColor);
+    text-align: center;
+    color: var(--colorWhite);
+}
+.citizensBank__wrapper .citizen__para{
+    font-size: 18px;
+    color: var(--tertiaryColor);
+    padding: 30px 68px;
+    background-color: var(--secondaryColor);
+    line-height: 35px;
+}
+
+/* Citizens testimonial css */
+.citizensTestimonial__wrapper{
+    padding-top: 0;
+}
+.citizensTestimonial__wrapper .col__testimonial p:nth-child(1),.citizensTestimonial__wrapper .col__testimonial p:nth-child(2){
+    font-size: 18px;
+    font-style: italic;
+    color: #666666;
+    position: relative;
+    margin-top: 8px;
+}
+.citizensTestimonial__wrapper .col__testimonial p:nth-child(1)::before,
+.citizensTestimonial__wrapper .col__testimonial p:nth-child(2)::before {
+    content: '';
+    background-image: url(./assets/quote.png);
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+.citizensTestimonial__wrapper .col__testimonial p:nth-child(3){
+    font-size: 18px;
+    color: #00945F;
+    margin-top: 20px;
+}
+.citizensTestimonial__wrapper .row{
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+    justify-content: space-between;
+    text-align: center;
+}
+.citizensTestimonial__wrapper .col__testimonial {
+    padding: 0 47px;
+    position: relative;
+}
+.citizensTestimonial__wrapper{
+    border-bottom: 2px solid #00945F;
+}
+
+.image__wrapper {
+    overflow: hidden;
+}
+.image__wrapper img:hover {
+    transform: scale(1.1);
+}
+.image__wrapper img {
+    transition-duration: 4s;
+}
+
+/* Footer section css */
+.footer__wrapper {
+    padding: 40px;
+}
+.footer__wrapper .icon img{
+    width: 25px;
+}
+.footer__wrapper .icon{
+    display: flex;
+    gap: 10px;
+}
+.footer__wrapper p:nth-child(2){
+    padding: 23px 0;
+    color: var(--verticalLineColor);
+    font-size: 11px;
+}
+.footer__wrapper p:nth-child(2) span a{
+    color: inherit;
+}
+.footer__wrapper p:nth-child(3){
+font-size: 12px;
+}
+
+/* Bottom to top btn css */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-top:hover {
+    background-color: var(--quaternaryColor);
+}
+
+/* Fade in out on scroll css*/
+.fadein {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0, 100px);
+  }
+  
+  .fadein.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+
+

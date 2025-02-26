@@ -1,0 +1,85 @@
+/* Mobile css */
+
+@media screen and (max-width: 768px) {
+  .citizens__wrapper .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .citizens__wrapper .row .col__left,
+  .citizens__wrapper .row .col__right {
+    width: auto !important;
+  }
+  header .logo {
+    padding: 30px;
+  }
+  header .logo img {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .citizensTestimonial__wrapper .row {
+    grid-template-columns: auto !important;
+  }
+  main .investment__wrapper,
+  .citizens__wrapper,
+  .citizensBank__wrapper,
+  .citizensTestimonial__wrapper {
+    padding: 25px;
+  }
+  .citizens__wrapper .row::after {
+    display: none;
+  }
+  .citizens__wrapper .row:nth-child(2) {
+    padding-bottom: 0;
+  }
+  .citizensBank__wrapper .citizen__para {
+    padding: 25px 20px;
+  }
+  .citizensTestimonial__wrapper .col__testimonial {
+    padding: 0;
+  }
+  .citizensTestimonial__wrapper .col__testimonial p:nth-child(1),
+  .citizensTestimonial__wrapper .col__testimonial p:nth-child(2) {
+    padding: 0 50px;
+  }
+  .citizensTestimonial__wrapper .row .col__testimonial:nth-child(2),
+  .citizensTestimonial__wrapper .row .col__testimonial:nth-child(3) {
+    margin-top: 30px;
+  }
+  .citizensTestimonial__wrapper .col__testimonial p:nth-child(1)::before,
+  .citizensTestimonial__wrapper .col__testimonial p:nth-child(2)::before {
+    left: 42px;
+  }
+  .mobile__hide{
+    display: none;
+  }
+  .desktop__hide{
+    display: block;
+  }
+  .citizens__wrapper .col__left,.citizens__wrapper .col__right{
+    border-bottom: 1px solid var(--verticalLineColor);
+        padding-bottom: 25px;
+  }
+  .citizens__wrapper .border__none{
+    border: none !important;
+  }
+  .career__btn{
+    margin: 20px 0 15px;
+  }
+  .citizens__wrapper .row{
+    padding-top: 25px;
+  }
+  .citizens__wrapper{
+    padding-bottom: 0;
+  }
+  .citizensTestimonial__wrapper{
+    padding: 25px 25px 65px 25px;
+  }
+}
+
+@media screen and (min-width:768px) {
+    .desktop__hide{
+        display: none;
+    }
+    
+}

@@ -75,6 +75,9 @@
   .citizensTestimonial__wrapper{
     padding: 25px 25px 65px 25px;
   }
+  .investment__wrapper{
+    padding-top: 32px;
+  }
 }
 
 @media screen and (min-width:768px) {

@@ -76,7 +76,7 @@
     padding: 25px 25px 65px 25px;
   }
   .investment__wrapper{
-    padding-top: 32px;
+    padding-top: 32px !important;
   }
 }
 
